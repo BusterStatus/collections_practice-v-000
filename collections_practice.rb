@@ -29,8 +29,9 @@ end
 def kesha_maker(array)
   new_array = []
   array.each {|x|
-    subarray = x.split(" ")
+    subarray = x.split("")
     subarray[2] = "$"
+    subarray.join
     subarray.to_s
     new_array << subarray
   }
