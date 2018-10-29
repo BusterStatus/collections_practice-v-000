@@ -31,7 +31,7 @@ def kesha_maker(array)
   array.each {|x|
     subarray = x.split("")
     subarray[2] = "$"
-    subarray.join
+    subarray.join("")
     subarray.to_s
     new_array << subarray
   }
